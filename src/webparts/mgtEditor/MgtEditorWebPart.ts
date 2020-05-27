@@ -12,7 +12,7 @@ import { PropertyFieldCodeEditor, PropertyFieldCodeEditorLanguages } from '@pnp/
 import { WebPartTitle } from "@pnp/spfx-controls-react/lib/WebPartTitle";
 import { DisplayMode } from '@microsoft/sp-core-library';
 
-export interface IMgtEditorWebPartProps {  
+export interface IMgtEditorWebPartProps {
   htmlCode: string;
   jsCode: string;
 }
@@ -24,14 +24,12 @@ export default class MgtEditorWebPart extends BaseClientSideWebPart<IMgtEditorWe
   }
 
   public render(): void {
-    
-    this.domElement.innerHTML = `    
+
+    this.domElement.innerHTML = `
       <div class="${ styles.mgtEditor}">
         <div class="${ styles.container}">
-          <div class="${ styles.row}">      
             ${this.properties.htmlCode != undefined ? this.properties.htmlCode : ""}
-          </div>
-        </div>      
+        </div>
       </div>`;
 
     var newScript = document.createElement("script");

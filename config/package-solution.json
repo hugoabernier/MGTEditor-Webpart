@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "Microsoft Graph Toolkit Editor",
+    "name": "Microsoft Graph Toolkit Webparts",
     "id": "55ea391d-c3a2-4413-bf13-3877132bc52f",
     "version": "1.0.0.1",
     "includeClientSideAssets": true,
@@ -44,7 +44,6 @@
         "scope": "Files.Read.All"
       }
     ]
-  },
   },
   "paths": {
     "zippedPackage": "solution/mgteditor-webpart.sppkg"
